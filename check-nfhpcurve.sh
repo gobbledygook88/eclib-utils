@@ -10,8 +10,10 @@
 #
 # Execute this script in the directory 
 # containing the newform folders, via
-#   . ./check-nfhpcurve.sh
+#   ./check-nfhpcurve.sh
 #
+# Edit the variables below to suit
+# your setup.
 # ===============================================
 
 # Newform directory names
@@ -25,6 +27,10 @@ END=110
 # Flag
 NDIFF=0
 
+
+
+
+# Begin loop through all files
 for N in $(eval echo {$START..$END})
 do
   DIFF=$(diff $NF1/x$N $NF2/x$N)
