@@ -9,6 +9,7 @@ View `install-eclib.sh` for more details on configuration and prerequisites.
 
 - `install-eclib.sh`: Installs eclib and its dependencies.
 - `setup-eclib.sh`: Sets environment variables for a non-`/usr/local/` install.
+- `check-nfhpcurve.sh`: Checks for differences in `nfhpcurve` program outputs.
 
 ## Roadmap
 
