@@ -34,8 +34,8 @@ export LD_LIBRARY_PATH=$PKGDIR/lib:$LD_LIBRARY_PATH
 
 # Setup local library include paths
 echo "  Adding $PKGDIR/include to C/CPLUS_INCLUDE_PATH"
-export C_INCLUDE_PATH=$PKGDIR/include:$C_INCLUDE_PATH
-export CPLUS_INCLUDE_PATH=$PKGDIR/include:$CPLUS_INCLUDE_PATH
+export C_INCLUDE_PATH=.:$PKGDIR/include:$C_INCLUDE_PATH
+export CPLUS_INCLUDE_PATH=.:$PKGDIR/include:$CPLUS_INCLUDE_PATH
 
 # Notify completion
 echo ""
