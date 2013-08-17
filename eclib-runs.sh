@@ -36,7 +36,7 @@ do
         UPPER=$MAX
     fi
 
-    ./tmanin_prof $LOWER $UPPER
+    ./tmanin_prof $LOWER $UPPER &
 
     LOWER=$(( $UPPER+1 ))
 done
